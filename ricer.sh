@@ -2,7 +2,7 @@
 sudo pacman -S i3-gaps
 sudo pacman -S comption
 mv config ~/.config/i3
-mv fonts/*.otf ~/.fonts 
-mv fonts/*.ttf ~/.fonts
+mv *.otf ~/.fonts 
+mv *.ttf ~/.fonts
 
 
