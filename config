@@ -50,7 +50,7 @@ floating_modifier $mod
 
 # start a terminal
 #######DEFAUT ########bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec terminator 
+bindsym $mod+Return exec st 
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -157,9 +157,9 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 
 ############to make windows open in a certian workspace##########
-assign [class="Terminator"] $ws1
+#assign [class="Terminator"] $ws1
 assign [class="zoom"] $ws10
-assign [class="firefox"] $ws2
+#assign [class="firefox"] $ws2
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -197,7 +197,7 @@ bindsym $mod+r mode "resize"
 
 ###copied from github
 
-set $bg-color 	         #2f343f
+set $bg-color 	         #2ed8ba
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
@@ -212,13 +212,13 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 
 #hide_edge_borders both
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
 ####gaps
 # binding sums to increase or dicrease the inner gaps and outer gaps
-#################################################################### //// bindsym $mod+o+p $out = $out+10 
+##### $out = $out+10 
 # settig variables
 set $in 10
-set $out 3
+set $out 5
 ###assigned
 gaps inner $in
 gaps outer $out
@@ -242,7 +242,7 @@ smart_borders on
 #}
 ############auto execute
 ###########WALLPAPER#############
-exec_always feh --bg-scale ~/Pictures/awsomekaneki.jpg
+exec_always feh --bg-scale ~/Pictures/arch.png
 
 ################
 
@@ -256,6 +256,17 @@ bindsym $mod+p exec poweroff
 bindsym $mod+Shift+d exec thunar
 
 
+bindsym $mod+c exec gnome-calculator
+
+
+
+
+# hellow world
+
+
+
+
+
 
 ### Polybar launch script
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
@@ -263,15 +274,3 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #
 #very importaint
 #
-
-
-
-
-
-
-
-
-
-
-
-
