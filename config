@@ -249,7 +249,7 @@ exec_always feh --bg-scale ~/Pictures/arch.png
 exec_always --no-startup-id compton
 exec firefox
 ############################################################
-###custon byndsm
+###custon byndsms
 
 bindsym $mod+p exec poweroff
  
@@ -261,14 +261,10 @@ bindsym $mod+c exec gnome-calculator
 
 
 
-# hellow world
 
-
-
-
-
-
-### Polybar launch script
+#############################
+### Polybar launch script ###
+#############################
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 #
 #
